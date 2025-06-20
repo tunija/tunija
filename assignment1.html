@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>zomato and blinkit logo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      color: brown;
+
+    }
+    .card {
+      width: 240px;
+      border-radius: 12px;
+      padding: 24px 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+      position: relative;
+    }
+    .card img.icon {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      background-color: white;
+      object-fit: contain;
+      color: antiquewhite;
+      text-size-adjust: 25px;
+      text-align: center;
+      
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+      color:black;
+    }
+    .card .desc {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.4;
+      
+    }
+    .card .link {
+      margin-top: auto;
+      font-size: 14px;
+      font-weight: bold;
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .card .link::after {
+      content: ">";
+      margin-left: 4px;
+      font-size: 16px;
+    }
+    .card.zomato {
+      background: linear-gradient(135deg, #ffd1d5, #fbe8ea);
+    }
+    .card.blinkit {
+      background: linear-gradient(135deg, #fff5cc, #fff8df);
+    }
+  </style>
+</head>
+<body>
+  <div class="card zomato">
+    <img class="icon" src="https://example.com/zomato-logo.png" alt="Zomato" />
+    <h2>zomato</h2>
+    <p class="desc">Get the app now to start ordering your favorite dishes!</p>
+    <a href="#" class="link">Check it out</a>
+  </div>
+
+  <div class="card blinkit">
+    <img class="icon" src="https://example.com/blinkit-logo.png" alt="Blinkit " />
+    <h2>blinkit</h2>
+    <p class="desc">Choose from 10,000+ products &amp; get them delivered in minutes</p>
+    <a href="#" class="link">Check it out</a>
+  </div>
+</body>
+</html>
